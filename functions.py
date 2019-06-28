@@ -47,6 +47,6 @@ def p_value(a, b, two_sided=False):
 
 def compare_p_value_and_alpha(p_value, alpha):
     if p_value > alpha:
-        print("Based on the alpha value we've set, we cannot reject the null hypothesis")
+        print("Based on the p value we've calculated({}) and the alpha value we'e set({}), we cannot reject the null hypothesis".format(p_value, alpha))
     else:
-        print("Based on the alpha value we've set, we can reject the null hypothesis and accept the alternative hypothesis")
+        print("Based on the p value we've calculated({}) and the alpha value we'e set({}), we can reject the null hypothesis and accept the alternative hypothesis".format(p_value, alpha))
